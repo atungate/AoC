@@ -12,7 +12,7 @@ cards = lapply(cards, function(x) do.call(rbind, x))
 
 
 # Part 1 ----
-# For number i, fill-in every bingo card. break loop if bingo
+# For each number, fill-in every bingo card. break loop if bingo
 bingo_simulator = function(cards, numbers, winner = c("first", "last")) {
     
     bingo_time = function(m) {
